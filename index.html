@@ -442,7 +442,31 @@
 
             gap: 18px;
         }
+.artwork-featured {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    margin-bottom: 24px;
+}
 
+.artwork-featured-card {
+    overflow: hidden;
+    background: #050505;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.artwork-featured-card img {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.artwork-featured-card:hover img {
+    transform: scale(1.03);
+}
         .artwork-card {
             position: relative;
 
@@ -1194,7 +1218,17 @@
         <strong>RECURRING DEATH</strong>.
     </p>
 
+<div class="artwork-featured">
 
+    <div class="artwork-featured-card">
+        <img src="images/artwork-07.png" alt="Recurring Death artwork 07">
+    </div>
+
+    <div class="artwork-featured-card">
+        <img src="images/artwork-08.png" alt="Recurring Death artwork 08">
+    </div>
+
+</div>
     <div class="artwork-grid">
 
 
