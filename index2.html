@@ -1,0 +1,269 @@
+html
+<!DOCTYPE html>
+<html lang="el">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RECURRING DEATH | Official Death Metal Band Site</title>
+    <style>
+        /* --- CSS ΣΤΥΛ ΓΙΑ ΤΗΝ ΕΜΦΑΝΙΣΗ (DEATH METAL AESTHETIC) --- */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Impact', 'Arial Black', sans-serif;
+        }
+
+        body {
+            background-color: #0b0b0b;
+            color: #e0e0e0;
+            line-height: 1.6;
+        }
+
+        /* Menu Πλοήγησης */
+        header {
+            background-color: rgba(0, 0, 0, 0.9);
+            border-bottom: 3px solid #8b0000;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 15px 20px;
+        }
+
+        .logo {
+            color: #8b0000;
+            font-size: 28px;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            text-shadow: 2px 2px 4px #000;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            color: #ffffff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 14px;
+            letter-spacing: 1px;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #8b0000;
+        }
+
+        /* Φωτογραφία / Banner στην Κορυφή (Hero Section) */
+        .hero {
+            margin-top: 65px; /* Κενό για να μην κρύβεται από το μενού */
+            background-color: #000000;
+            text-align: center;
+            border-bottom: 2px solid #222;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .hero-banner {
+            width: 100%;
+            max-width: 1200px; /* Ιδανικό πλάτος για να μην παραμορφώνεται */
+            height: auto;
+            display: block;
+        }
+
+        /* Κοινά Στυλ για τα Sections */
+        section {
+            padding: 60px 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        h2 {
+            font-size: 36px;
+            color: #8b0000;
+            text-transform: uppercase;
+            border-bottom: 2px solid #8b0000;
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+            letter-spacing: 2px;
+        }
+
+        h3 {
+            font-size: 22px;
+            color: #ffffff;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-family: 'Arial', sans-serif;
+            margin-bottom: 15px;
+            color: #bbb;
+        }
+
+        /* Λίστα Συναυλιών (Tour Dates) */
+        .tour-list {
+            list-style: none;
+        }
+
+        .tour-item {
+            display: flex;
+            justify-content: space-between;
+            background-color: #151515;
+            padding: 15px 20px;
+            margin-bottom: 10px;
+            border-left: 4px solid #8b0000;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .tour-date { color: #8b0000; font-weight: bold; }
+        .tour-city { color: #fff; }
+        .tour-venue { color: #888; }
+
+        /* Φόρμα Επικοινωνίας */
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        input, textarea {
+            background-color: #151515;
+            border: 1px solid #333;
+            color: #fff;
+            padding: 12px;
+            margin-bottom: 15px;
+            font-family: 'Arial', sans-serif;
+        }
+
+        input:focus, textarea:focus {
+            border-color: #8b0000;
+            outline: none;
+        }
+
+        button {
+            background-color: #8b0000;
+            color: white;
+            border: none;
+            padding: 15px;
+            font-size: 16px;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        button:hover {
+            background-color: #ff0000;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #000;
+            text-align: center;
+            padding: 25px;
+            font-family: 'Arial', sans-serif;
+            font-size: 14px;
+            color: #555;
+            border-top: 1px solid #222;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- MENU ΠΛΟΗΓΗΣΗΣ -->
+    <header>
+        <div class="nav-container">
+            <div class="logo">RECURRING DEATH</div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Αρχικη</a></li>
+                    <li><a href="#news">Νεα</a></li>
+                    <li><a href="#music">Μουσικη</a></li>
+                    <li><a href="#shows">Συναυλιεσ</a></li>
+                    <li><a href="#contact">Επικοινωνια</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ΦΩΤΟΓΡΑΦΙΑ / BANNER ΣΤΗΝ ΚΟΡΥΦΗ -->
+    <div class="hero" id="home">
+        <!-- Εδώ μπήκε η φωτογραφία της μπάντας σας -->
+        <img class="hero-banner" src="images/banner.png.png" alt="RECURRING DEATH Official Banner">
+    </div>
+
+    <!-- SECTION: ΝΕΑ -->
+    <section id="news">
+        <h2>Τελευταια Νεα</h2>
+        <article>
+            <h3>Νέο Album "Spiritual Equilibrium" - Προπαραγγελίες Τώρα!</h3>
+            <p style="color: #8b0000; font-size: 12px; font-weight: bold;">Ανακοινώθηκε: 30 Σεπτεμβρίου 2026</p>
+            <p>Είμαστε στην ευχάριστη θέση να ανακοινώσουμε ότι ο νέος δίσκος των <strong>RECURRING DEATH</strong> είναι έτοιμος. 10 κομμάτια απόλυτης death metal καταστροφής. Κυκλοφορεί τον επόμενο μήνα σε Vinyl, CD και σε όλες τις Digital πλατφόρμες (Spotify, Bandcamp, Apple Music).</p>
+        </article>
+    </section>
+
+    <!-- SECTION: ΜΟΥΣΙΚΗ -->
+    <section id="music">
+        <h2>Μουσικη</h2>
+        <p>Ακούστε το single μας "Hazardous Abyss" από τον επερχόμενο δίσκο:</p>
+		<div style="background-color: #151515; padding: 30px; text-align: center; border: 1px dashed #8b0000; font-family: 'Arial'; color: #888;">
+    [Εδώ θα μπει το Spotify Embed Player ή το Bandcamp Player]
+</div>
+    </section>
+
+    <!-- SECTION: ΣΥΝΑΥΛΙΕΣ -->
+    <section id="shows">
+        <h2>Επερχομενεσ Συναυλιεσ</h2>
+        <ul class="tour-list">
+            <li class="tour-item">
+                <span class="tour-date">DATE</span>
+                <span class="tour-city">LOCATION</span>
+                <span class="tour-venue">CLUB</span>
+            </li>
+            <li class="tour-item">
+                <span class="tour-date">DATE</span>
+                <span class="tour-city">LOCATION</span>
+                <span class="tour-venue">CLUB</span>
+            </li>
+            <li class="tour-item">
+                <span class="tour-date">DATE</span>
+                <span class="tour-city">LOCATION</span>
+                <span class="tour-venue">CLUB</span>
+            </li>
+        </ul>
+    </section>
+
+    <!-- SECTION: ΕΠΙΚΟΙΝΩΝΙΑ -->
+    <section id="contact">
+        <h2>Επικοινωνια & Booking</h2>
+        <p>Για κλείσιμο συναυλιών, συνεντεύξεις ή ερωτήσεις, συμπληρώστε την παρακάτω φόρμα:</p>
+        <form action="#" method="POST">
+            <input type="text" placeholder="Το Όνομά σας" required>
+            <input type="email" placeholder="Το Email σας" required>
+            <textarea rows="5" placeholder="Το Μήνυμά σας" required></textarea>
+            <button type="submit">Αποστολη Μηνυματοσ</button>
+        </form>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2026 RECURRING DEATH. All Rights Reserved. Designed for the Underground.</p>
+    </footer>
+
+</body>
+</html>
