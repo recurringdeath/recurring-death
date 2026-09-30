@@ -95,12 +95,49 @@
             align-items: center;
         }
 
-        .hero-banner {
-            width: 100%;
-            max-width: 100%;
-            height: auto;
-            display: block;
-        }
+       .hero-banner {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.hero-content {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.social-hotspot {
+    position: absolute;
+    display: block;
+    z-index: 10;
+}
+
+/* SoundCloud */
+.soundcloud-hotspot {
+    left: 68.8%;
+    top: 45.5%;
+    width: 4.5%;
+    height: 8%;
+}
+
+/* Instagram */
+.instagram-hotspot {
+    left: 67.7%;
+    top: 56.8%;
+    width: 3.2%;
+    height: 7%;
+}
+
+/* Facebook */
+.facebook-hotspot {
+    left: 73.8%;
+    top: 56.8%;
+    width: 3.3%;
+    height: 7%;
+}
 
         /* ================================
            SECTIONS
@@ -405,12 +442,35 @@
          ========================================== -->
 
     <div class="hero" id="home">
+    <div class="hero-content">
 
         <img class="hero-banner"
              src="banner.png.png"
              alt="RECURRING DEATH Official Banner">
 
+        <!-- SoundCloud -->
+        <a class="social-hotspot soundcloud-hotspot"
+           href="https://soundcloud.com/recurring-death"
+           target="_blank"
+           rel="noopener noreferrer"
+           aria-label="Recurring Death on SoundCloud"></a>
+
+        <!-- Instagram -->
+        <a class="social-hotspot instagram-hotspot"
+           href="https://www.instagram.com/recurringdeathofficial/?hl=en"
+           target="_blank"
+           rel="noopener noreferrer"
+           aria-label="Recurring Death on Instagram"></a>
+
+        <!-- Facebook -->
+        <a class="social-hotspot facebook-hotspot"
+           href="https://www.facebook.com/people/Recurring-Death/61595077432643/"
+           target="_blank"
+           rel="noopener noreferrer"
+           aria-label="Recurring Death on Facebook"></a>
+
     </div>
+</div>
 
 
     <!-- SECTION: ΝΕΑ -->
