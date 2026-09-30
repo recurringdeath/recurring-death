@@ -1,314 +1,710 @@
+```html
 <!DOCTYPE html>
-<html lang="el">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RECURRING DEATH | Official Death Metal Band Site</title>
+
+    <meta name="description"
+          content="RECURRING DEATH — Death Metal from Greece. Spiritual Equilibrium.">
+    <meta name="keywords"
+          content="Recurring Death, Death Metal, Greece, Spiritual Equilibrium, Hazardous Abyss">
+
+    <title>RECURRING DEATH | Official Website</title>
 
     <style>
-        /* ================================
-           RECURRING DEATH - DARK METAL STYLE
-           ================================ */
+
+        /* =========================================================
+           RECURRING DEATH
+           OFFICIAL WEBSITE
+           DARK DEATH METAL DESIGN
+           ========================================================= */
+
+        :root {
+            --black: #050505;
+            --black-2: #090909;
+            --black-3: #101010;
+            --dark: #151515;
+            --border: #252525;
+
+            --white: #f2f2f2;
+            --light: #cfcfcf;
+            --grey: #888;
+            --dark-grey: #555;
+
+            --blood: #8b0000;
+            --blood-light: #b00000;
+
+            --max-width: 1100px;
+        }
 
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 90px;
         }
 
         body {
-            background-color: #080808;
-            color: #d8d8d8;
-            line-height: 1.6;
+            background: var(--black);
+            color: var(--light);
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.7;
         }
 
-        /* ================================
-           MENU
-           ================================ */
+        img {
+            max-width: 100%;
+            display: block;
+        }
+
+        a {
+            color: inherit;
+        }
+
+
+        /* =========================================================
+           HEADER
+           ========================================================= */
 
         header {
-            background-color: rgba(0, 0, 0, 0.96);
-            border-bottom: 1px solid #8b0000;
             position: fixed;
-            width: 100%;
             top: 0;
+            left: 0;
+            width: 100%;
             z-index: 1000;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.8);
+
+            background: rgba(0, 0, 0, 0.96);
+            border-bottom: 1px solid var(--blood);
+
+            box-shadow:
+                0 4px 25px rgba(0, 0, 0, 0.8);
         }
 
         .nav-container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
             max-width: 1200px;
-            margin: 0 auto;
-            padding: 18px 20px;
+            margin: auto;
+
+            min-height: 70px;
+            padding: 0 25px;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
         }
 
         .logo {
-            color: #ffffff;
-            font-family: Arial, Helvetica, sans-serif;
-            font-size: 22px;
+            color: #fff;
+
+            font-size: 21px;
             font-weight: 900;
-            letter-spacing: 4px;
-            text-transform: uppercase;
-            text-shadow: 0 0 10px rgba(139, 0, 0, 0.5);
+            letter-spacing: 5px;
+
+            white-space: nowrap;
+
+            text-shadow:
+                0 0 12px rgba(139, 0, 0, 0.45);
         }
 
         nav ul {
-            display: flex;
             list-style: none;
-        }
 
-        nav ul li {
-            margin-left: 28px;
-        }
-
-        nav ul li a {
-            color: #bdbdbd;
-            text-decoration: none;
-            text-transform: uppercase;
-            font-size: 12px;
-            font-weight: 700;
-            letter-spacing: 2px;
-            transition: all 0.3s ease;
-        }
-
-        nav ul li a:hover {
-            color: #ffffff;
-            text-shadow: 0 0 8px #8b0000;
-        }
-
-        /* ================================
-           BANNER
-           ================================ */
-
-        .hero {
-            margin-top: 65px;
-            background-color: #000000;
-            text-align: center;
-            border-bottom: 1px solid #222;
-            padding: 0;
             display: flex;
-            justify-content: center;
             align-items: center;
+            gap: 30px;
         }
 
-       .hero-banner {
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-    display: block;
-}
-
-.hero-content {
-    position: relative;
-    width: 100%;
-    max-width: 100%;
-    margin: 0 auto;
-}
-
-.social-hotspot {
-    position: absolute;
-    display: block;
-    z-index: 10;
-}
-
-/* SoundCloud */
-.soundcloud-hotspot {
-    left: 68.8%;
-    top: 45.5%;
-    width: 4.5%;
-    height: 8%;
-}
-
-/* Instagram */
-.instagram-hotspot {
-    left: 67.7%;
-    top: 56.8%;
-    width: 3.2%;
-    height: 7%;
-}
-
-/* Facebook */
-.facebook-hotspot {
-    left: 73.8%;
-    top: 56.8%;
-    width: 3.3%;
-    height: 7%;
-}
-
-        /* ================================
-           SECTIONS
-           ================================ */
-
-        section {
-            padding: 75px 20px;
-            max-width: 1000px;
-            margin: 0 auto;
-        }
-
-        h2 {
-            font-family: Arial, Helvetica, sans-serif;
-            font-size: 30px;
-            font-weight: 900;
-            color: #ffffff;
-            text-transform: uppercase;
-            border-bottom: 1px solid #333;
-            padding-bottom: 14px;
-            margin-bottom: 35px;
-            letter-spacing: 5px;
+        nav a {
             position: relative;
+
+            color: #aaa;
+            text-decoration: none;
+
+            font-size: 11px;
+            font-weight: 800;
+
+            letter-spacing: 2px;
+            text-transform: uppercase;
+
+            transition: 0.3s ease;
         }
 
-        h2::after {
+        nav a::after {
             content: "";
-            display: block;
-            width: 70px;
-            height: 3px;
-            background-color: #8b0000;
+
             position: absolute;
             left: 0;
-            bottom: -2px;
+            bottom: -7px;
+
+            width: 0;
+            height: 1px;
+
+            background: var(--blood-light);
+
+            transition: width 0.3s ease;
         }
 
-        h3 {
-            font-family: Arial, Helvetica, sans-serif;
-            font-size: 20px;
-            font-weight: 800;
-            color: #ffffff;
-            margin-bottom: 12px;
-            letter-spacing: 1px;
+        nav a:hover {
+            color: #fff;
+        }
+
+        nav a:hover::after {
+            width: 100%;
+        }
+
+
+        /* =========================================================
+           HERO / BANNER
+           ========================================================= */
+
+        .hero {
+            margin-top: 70px;
+
+            width: 100%;
+
+            background: #000;
+
+            border-bottom: 1px solid #1c1c1c;
+        }
+
+        .hero-content {
+            position: relative;
+
+            width: 100%;
+            max-width: 1600px;
+
+            margin: auto;
+        }
+
+        .hero-banner {
+            width: 100%;
+            height: auto;
+
+            display: block;
+        }
+
+        .social-hotspot {
+            position: absolute;
+
+            display: block;
+
+            z-index: 10;
+        }
+
+        /* SoundCloud */
+        .soundcloud-hotspot {
+            left: 68.8%;
+            top: 45.5%;
+
+            width: 4.5%;
+            height: 8%;
+        }
+
+        /* Instagram */
+        .instagram-hotspot {
+            left: 67.7%;
+            top: 56.8%;
+
+            width: 3.2%;
+            height: 7%;
+        }
+
+        /* Facebook */
+        .facebook-hotspot {
+            left: 73.8%;
+            top: 56.8%;
+
+            width: 3.3%;
+            height: 7%;
+        }
+
+
+        /* =========================================================
+           GENERAL SECTIONS
+           ========================================================= */
+
+        section {
+            max-width: var(--max-width);
+
+            margin: auto;
+
+            padding: 100px 25px;
+        }
+
+        .section-title {
+            position: relative;
+
+            margin-bottom: 50px;
+
+            padding-bottom: 18px;
+
+            color: #fff;
+
+            font-size: 31px;
+            font-weight: 900;
+
+            letter-spacing: 6px;
+
+            text-transform: uppercase;
+
+            border-bottom: 1px solid var(--border);
+        }
+
+        .section-title::after {
+            content: "";
+
+            position: absolute;
+
+            left: 0;
+            bottom: -2px;
+
+            width: 75px;
+            height: 3px;
+
+            background: var(--blood);
         }
 
         p {
-            font-family: Arial, Helvetica, sans-serif;
+            color: #8d8d8d;
+
             font-size: 15px;
-            margin-bottom: 15px;
-            color: #999;
-            line-height: 1.8;
+
+            line-height: 1.9;
         }
 
-        strong {
-            color: #ffffff;
-        }
 
-        /* ================================
-           NEWS
-           ================================ */
+        /* =========================================================
+           INTRO
+           ========================================================= */
 
-        article {
-            background-color: #0e0e0e;
-            border-left: 3px solid #8b0000;
-            padding: 25px 30px;
-        }
-
-        /* ================================
-           MUSIC / COMING SOON
-           ================================ */
-
-        #music > div {
-            background-color: #101010 !important;
-            padding: 45px 20px !important;
+        .intro {
             text-align: center;
-            border: 1px solid #292929 !important;
-            position: relative;
+
+            padding-top: 95px;
+            padding-bottom: 95px;
         }
 
-        #music > div::before {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 2px;
-            background-color: #8b0000;
-        }
+        .intro h1 {
+            color: #fff;
 
-        #music > div > div:first-child {
-            font-family: Arial, Helvetica, sans-serif !important;
-            font-size: 30px !important;
+            font-size: 40px;
             font-weight: 900;
-            color: #ffffff !important;
-            letter-spacing: 6px !important;
-            margin-bottom: 12px !important;
+
+            letter-spacing: 9px;
+
+            margin-bottom: 20px;
         }
 
-        #music > div > div:last-child {
-            font-family: Arial, Helvetica, sans-serif !important;
-            color: #777 !important;
-            font-size: 13px !important;
+        .intro-tagline {
+            color: var(--blood-light);
+
+            font-size: 13px;
+            font-weight: 900;
+
+            letter-spacing: 5px;
+
+            margin-bottom: 20px;
+        }
+
+        .intro-text {
+            max-width: 650px;
+
+            margin: 0 auto 35px;
+        }
+
+        .button {
+            display: inline-block;
+
+            padding: 13px 30px;
+
+            border: 1px solid var(--blood);
+
+            color: #fff;
+
+            text-decoration: none;
+
+            font-size: 11px;
+            font-weight: 900;
+
             letter-spacing: 3px;
+
+            transition: 0.3s ease;
         }
 
-        /* ================================
-           LIVE SHOWS
-           ================================ */
+        .button:hover {
+            background: var(--blood);
+
+            border-color: var(--blood-light);
+        }
+
+
+        /* =========================================================
+           ALBUM FEATURE
+           ========================================================= */
+
+        .album-feature {
+            display: grid;
+
+            grid-template-columns: 1fr 1fr;
+
+            gap: 55px;
+
+            align-items: center;
+        }
+
+        .album-cover {
+            border: 1px solid #252525;
+
+            background: #000;
+
+            padding: 8px;
+
+            box-shadow:
+                0 20px 60px rgba(0, 0, 0, 0.7);
+        }
+
+        .album-cover img {
+            width: 100%;
+        }
+
+        .album-info h3 {
+            color: #fff;
+
+            font-size: 28px;
+
+            letter-spacing: 4px;
+
+            margin-bottom: 8px;
+        }
+
+        .album-subtitle {
+            color: var(--blood-light);
+
+            font-size: 12px;
+            font-weight: 900;
+
+            letter-spacing: 4px;
+
+            margin-bottom: 25px;
+        }
+
+        .album-info p {
+            margin-bottom: 18px;
+        }
+
+        .album-meta {
+            margin-top: 30px;
+
+            padding: 20px;
+
+            background: var(--black-3);
+
+            border-left: 3px solid var(--blood);
+        }
+
+        .album-meta span {
+            display: block;
+
+            color: #777;
+
+            font-size: 12px;
+
+            letter-spacing: 1px;
+        }
+
+        .album-meta strong {
+            color: #ddd;
+        }
+
+
+        /* =========================================================
+           ARTWORK
+           ========================================================= */
+
+        #artwork {
+            max-width: 1200px;
+        }
+
+        .artwork-intro {
+            max-width: 700px;
+
+            margin-bottom: 45px;
+        }
+
+        .artwork-grid {
+            display: grid;
+
+            grid-template-columns:
+                repeat(3, 1fr);
+
+            gap: 18px;
+        }
+
+        .artwork-card {
+            position: relative;
+
+            overflow: hidden;
+
+            background: #000;
+
+            border: 1px solid #242424;
+
+            cursor: pointer;
+        }
+
+        .artwork-card img {
+            width: 100%;
+
+            aspect-ratio: 1 / 1;
+
+            object-fit: cover;
+
+            transition:
+                transform 0.5s ease,
+                opacity 0.5s ease;
+        }
+
+        .artwork-card:hover img {
+            transform: scale(1.06);
+
+            opacity: 0.55;
+        }
+
+        .artwork-overlay {
+            position: absolute;
+
+            left: 0;
+            bottom: 0;
+
+            width: 100%;
+
+            padding: 22px;
+
+            background:
+                linear-gradient(
+                    transparent,
+                    rgba(0, 0, 0, 0.95)
+                );
+
+            opacity: 0;
+
+            transition: 0.4s ease;
+        }
+
+        .artwork-card:hover .artwork-overlay {
+            opacity: 1;
+        }
+
+        .artwork-overlay h3 {
+            color: #fff;
+
+            font-size: 15px;
+
+            letter-spacing: 3px;
+
+            text-transform: uppercase;
+        }
+
+        .artwork-overlay span {
+            color: #999;
+
+            font-size: 11px;
+
+            letter-spacing: 2px;
+        }
+
+
+        /* =========================================================
+           MUSIC
+           ========================================================= */
+
+        .music-box {
+            padding: 50px 30px;
+
+            background: var(--black-3);
+
+            border: 1px solid #292929;
+
+            border-top: 2px solid var(--blood);
+
+            text-align: center;
+        }
+
+        .music-box h3 {
+            color: #fff;
+
+            font-size: 30px;
+
+            letter-spacing: 5px;
+
+            margin-bottom: 8px;
+        }
+
+        .music-box .track-name {
+            color: var(--blood-light);
+
+            font-size: 12px;
+            font-weight: 900;
+
+            letter-spacing: 4px;
+
+            margin-bottom: 25px;
+        }
+
+        .music-box p {
+            margin-bottom: 25px;
+        }
+
+
+        /* =========================================================
+           NEWS
+           ========================================================= */
+
+        .news-card {
+            padding: 35px;
+
+            background: var(--black-3);
+
+            border-left: 3px solid var(--blood);
+
+            border-bottom: 1px solid #222;
+        }
+
+        .news-label {
+            color: var(--blood-light);
+
+            font-size: 11px;
+            font-weight: 900;
+
+            letter-spacing: 3px;
+
+            margin-bottom: 12px;
+        }
+
+        .news-card h3 {
+            color: #fff;
+
+            font-size: 23px;
+
+            letter-spacing: 2px;
+
+            margin-bottom: 8px;
+        }
+
+        .news-date {
+            color: #555;
+
+            font-size: 11px;
+
+            letter-spacing: 2px;
+
+            margin-bottom: 20px;
+        }
+
+
+        /* =========================================================
+           LIVE
+           ========================================================= */
 
         .tour-list {
             list-style: none;
         }
 
         .tour-item {
-            display: flex;
-            justify-content: space-between;
+            display: grid;
+
+            grid-template-columns:
+                150px 1fr 1fr;
+
+            gap: 20px;
+
             align-items: center;
-            background-color: #101010;
-            padding: 18px 20px;
+
+            padding: 20px;
+
             margin-bottom: 8px;
-            border-left: 3px solid #8b0000;
+
+            background: var(--black-3);
+
+            border-left: 3px solid var(--blood);
+
             border-bottom: 1px solid #202020;
-            font-family: Arial, Helvetica, sans-serif;
-            transition: background-color 0.3s ease;
+
+            transition: 0.3s ease;
         }
 
         .tour-item:hover {
-            background-color: #161616;
+            background: #151515;
         }
 
         .tour-date {
-            color: #b00000;
-            font-weight: 800;
+            color: var(--blood-light);
+
+            font-weight: 900;
+
             letter-spacing: 1px;
         }
 
         .tour-city {
-            color: #ffffff;
-            font-weight: 700;
+            color: #fff;
+
+            font-weight: 800;
+
             letter-spacing: 1px;
         }
 
         .tour-venue {
             color: #666;
+
             letter-spacing: 1px;
         }
 
-        /* ================================
-           CONTACT FORM
-           ================================ */
+
+        /* =========================================================
+           CONTACT
+           ========================================================= */
+
+        .contact-text {
+            margin-bottom: 30px;
+        }
 
         form {
             display: flex;
+
             flex-direction: column;
+
+            gap: 14px;
         }
 
         input,
-        textarea {
-            background-color: #101010;
+        textarea,
+        select {
+            width: 100%;
+
+            padding: 16px;
+
+            background: #101010;
+
             border: 1px solid #292929;
-            color: #ffffff;
-            padding: 15px;
-            margin-bottom: 15px;
+
+            color: #fff;
+
             font-family: Arial, Helvetica, sans-serif;
+
             font-size: 14px;
+
             outline: none;
-            transition: border-color 0.3s ease;
+
+            transition: 0.3s ease;
         }
 
         input:focus,
-        textarea:focus {
-            border-color: #8b0000;
+        textarea:focus,
+        select:focus {
+            border-color: var(--blood);
         }
 
         input::placeholder,
@@ -316,222 +712,342 @@
             color: #555;
         }
 
+        textarea {
+            min-height: 150px;
+
+            resize: vertical;
+        }
+
+        select {
+            color: #777;
+        }
+
         button {
-            background-color: #8b0000;
-            color: #ffffff;
+            padding: 16px;
+
+            background: var(--blood);
+
             border: none;
-            padding: 15px;
-            font-family: Arial, Helvetica, sans-serif;
-            font-size: 13px;
-            font-weight: 800;
-            text-transform: uppercase;
+
+            color: #fff;
+
+            font-size: 11px;
+            font-weight: 900;
+
             letter-spacing: 3px;
+
             cursor: pointer;
-            transition: all 0.3s ease;
+
+            transition: 0.3s ease;
         }
 
         button:hover {
-            background-color: #b00000;
-            letter-spacing: 4px;
+            background: var(--blood-light);
         }
 
-        /* ================================
+
+        /* =========================================================
+           SOCIALS
+           ========================================================= */
+
+        .socials {
+            text-align: center;
+
+            padding-top: 65px;
+            padding-bottom: 65px;
+
+            border-top: 1px solid #171717;
+        }
+
+        .social-links {
+            display: flex;
+
+            justify-content: center;
+
+            flex-wrap: wrap;
+
+            gap: 12px;
+
+            margin-top: 25px;
+        }
+
+        .social-links a {
+            padding: 11px 20px;
+
+            border: 1px solid #292929;
+
+            color: #888;
+
+            text-decoration: none;
+
+            font-size: 10px;
+            font-weight: 900;
+
+            letter-spacing: 2px;
+
+            transition: 0.3s ease;
+        }
+
+        .social-links a:hover {
+            color: #fff;
+
+            border-color: var(--blood);
+
+            background: #100000;
+        }
+
+
+        /* =========================================================
            FOOTER
-           ================================ */
+           ========================================================= */
 
         footer {
-            background-color: #000000;
+            padding: 35px 20px;
+
+            background: #000;
+
+            border-top: 1px solid #1c1c1c;
+
             text-align: center;
-            padding: 30px 20px;
-            border-top: 1px solid #222;
         }
 
         footer p {
-            font-family: Arial, Helvetica, sans-serif;
-            font-size: 12px;
             color: #444;
+
+            font-size: 11px;
+
             letter-spacing: 1px;
-        }.band-intro {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 85px 20px 75px;
-    text-align: center;
-}
+        }
 
-.band-intro h2 {
-    border-bottom: none;
-    margin-bottom: 12px;
-    padding-bottom: 0;
-    font-size: 34px;
-    letter-spacing: 7px;
-}
 
-.band-intro h2::after {
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: -10px;
-}
+        /* =========================================================
+           RESPONSIVE
+           ========================================================= */
 
-.intro-tagline {
-    margin-top: 28px;
-    margin-bottom: 18px;
-    color: #b00000;
-    font-size: 13px;
-    font-weight: 800;
-    letter-spacing: 4px;
-}
-
-.intro-text {
-    color: #888;
-    font-size: 15px;
-    line-height: 1.9;
-    margin-bottom: 30px;
-}
-
-.intro-button {
-    display: inline-block;
-    padding: 13px 28px;
-    border: 1px solid #8b0000;
-    color: #fff;
-    text-decoration: none;
-    font-size: 12px;
-    font-weight: 800;
-    letter-spacing: 3px;
-    transition: all 0.3s ease;
-}
-
-.intro-button:hover {
-    background-color: #8b0000;
-    border-color: #b00000;
-}
-
-        /* ================================
-           MOBILE
-           ================================ */
-
-        @media (max-width: 768px) {
+        @media (max-width: 850px) {
 
             .nav-container {
                 flex-direction: column;
-                padding: 15px 10px;
+
+                padding: 15px 15px;
             }
 
             .logo {
                 margin-bottom: 12px;
-                font-size: 18px;
+
+                font-size: 17px;
+
                 letter-spacing: 3px;
             }
 
             nav ul {
+                gap: 15px;
+
                 flex-wrap: wrap;
+
                 justify-content: center;
             }
 
-            nav ul li {
-                margin: 5px 9px;
-            }
+            nav a {
+                font-size: 9px;
 
-            nav ul li a {
-                font-size: 10px;
                 letter-spacing: 1px;
             }
 
             .hero {
-                margin-top: 105px;
+                margin-top: 112px;
             }
 
-            section {
-                padding: 55px 18px;
+            .album-feature {
+                grid-template-columns: 1fr;
+
+                gap: 35px;
             }
 
-            h2 {
-                font-size: 24px;
-                letter-spacing: 3px;
-            }
-
-            h3 {
-                font-size: 18px;
+            .artwork-grid {
+                grid-template-columns:
+                    repeat(2, 1fr);
             }
 
             .tour-item {
-                flex-direction: column;
-                align-items: flex-start;
+                grid-template-columns: 1fr;
+
                 gap: 5px;
             }
+        }
 
-            #music > div > div:first-child {
-                font-size: 23px !important;
-                letter-spacing: 4px !important;
+
+        @media (max-width: 550px) {
+
+            section {
+                padding: 70px 18px;
+            }
+
+            .intro {
+                padding-top: 70px;
+                padding-bottom: 70px;
+            }
+
+            .intro h1 {
+                font-size: 27px;
+
+                letter-spacing: 5px;
+            }
+
+            .section-title {
+                font-size: 23px;
+
+                letter-spacing: 3px;
+            }
+
+            .artwork-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .music-box h3 {
+                font-size: 22px;
+
+                letter-spacing: 3px;
+            }
+
+            .news-card {
+                padding: 25px 20px;
+            }
+
+            .social-links {
+                flex-direction: column;
+
+                align-items: stretch;
+            }
+
+            .social-links a {
+                text-align: center;
             }
         }
+
     </style>
 </head>
 
+
 <body>
 
-    <!-- MENU ΠΛΟΗΓΗΣΗΣ -->
-    <header>
-        <div class="nav-container">
 
-            <div class="logo">RECURRING DEATH</div>
+<!-- =========================================================
+     HEADER
+     ========================================================= -->
 
-            <nav>
-                <ul>
-                    <li><a href="#home">Αρχικη</a></li>
-                    <li><a href="#news">Νεα</a></li>
-                    <li><a href="#music">Μουσικη</a></li>
-                    <li><a href="#shows">Συναυλιεσ</a></li>
-                    <li><a href="#contact">Επικοινωνια</a></li>
-                </ul>
-            </nav>
+<header>
 
+    <div class="nav-container">
+
+        <div class="logo">
+            RECURRING DEATH
         </div>
-    </header>
 
+        <nav>
 
-    <!-- ==========================================
-         BANNER - ΔΕΝ ΤΟ ΠΕΙΡΑΖΟΥΜΕ
-         ========================================== -->
+            <ul>
 
-    <div class="hero" id="home">
-    <div class="hero-content">
+                <li>
+                    <a href="#home">Home</a>
+                </li>
 
-        <img class="hero-banner"
-             src="banner.png.png"
-             alt="RECURRING DEATH Official Banner">
+                <li>
+                    <a href="#band">Band</a>
+                </li>
 
-        <!-- SoundCloud -->
-        <a class="social-hotspot soundcloud-hotspot"
-           href="https://soundcloud.com/recurring-death"
-           target="_blank"
-           rel="noopener noreferrer"
-           aria-label="Recurring Death on SoundCloud"></a>
+                <li>
+                    <a href="#music">Music</a>
+                </li>
 
-        <!-- Instagram -->
-        <a class="social-hotspot instagram-hotspot"
-           href="https://www.instagram.com/recurringdeathofficial/?hl=en"
-           target="_blank"
-           rel="noopener noreferrer"
-           aria-label="Recurring Death on Instagram"></a>
+                <li>
+                    <a href="#artwork">Artwork</a>
+                </li>
 
-        <!-- Facebook -->
-        <a class="social-hotspot facebook-hotspot"
-           href="https://www.facebook.com/people/Recurring-Death/61595077432643/"
-           target="_blank"
-           rel="noopener noreferrer"
-           aria-label="Recurring Death on Facebook"></a>
+                <li>
+                    <a href="#news">News</a>
+                </li>
+
+                <li>
+                    <a href="#shows">Live</a>
+                </li>
+
+                <li>
+                    <a href="#contact">Contact</a>
+                </li>
+
+            </ul>
+
+        </nav>
 
     </div>
+
+</header>
+
+
+<!-- =========================================================
+     HERO
+     ========================================================= -->
+
+<div class="hero" id="home">
+
+    <div class="hero-content">
+
+        <!-- KEEP YOUR EXISTING BANNER -->
+        <img
+            class="hero-banner"
+            src="banner.png.png"
+            alt="RECURRING DEATH Official Banner"
+        >
+
+
+        <!-- SOUNDCLOUD -->
+        <a
+            class="social-hotspot soundcloud-hotspot"
+            href="https://soundcloud.com/recurring-death"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Recurring Death on SoundCloud">
+        </a>
+
+
+        <!-- INSTAGRAM -->
+        <a
+            class="social-hotspot instagram-hotspot"
+            href="https://www.instagram.com/recurringdeathofficial/?hl=en"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Recurring Death on Instagram">
+        </a>
+
+
+        <!-- FACEBOOK -->
+        <a
+            class="social-hotspot facebook-hotspot"
+            href="https://www.facebook.com/people/Recurring-Death/61595077432643/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Recurring Death on Facebook">
+        </a>
+
+    </div>
+
 </div>
 
 
-    <!-- SECTION: ΝΕΑ -->
-<section class="band-intro">
-    <h2>RECURRING DEATH</h2>
+<!-- =========================================================
+     INTRO
+     ========================================================= -->
 
-    <p class="intro-tagline">
+<section class="intro">
+
+    <h1>
+        RECURRING DEATH
+    </h1>
+
+    <div class="intro-tagline">
         DEATH METAL FROM GREECE
-    </p>
+    </div>
 
     <p class="intro-text">
         Forged in darkness. Driven by brutality.
@@ -539,148 +1055,582 @@
         New music coming soon.
     </p>
 
-    <a class="intro-button" href="#music">
-        LISTEN / FOLLOW
+    <a class="button" href="#music">
+        ENTER THE ABYSS
     </a>
+
 </section>
-    <section id="news">
 
-      <section id="news">
 
-    <h2>ΤΕΛΕΥΤΑΙΑ ΝΕΑ</h2>
+<!-- =========================================================
+     BAND
+     ========================================================= -->
 
-    <article>
+<section id="band">
+
+    <h2 class="section-title">
+        The Band
+    </h2>
+
+    <p>
+        RECURRING DEATH is a death metal band from Greece,
+        forged in darkness and driven by brutality.
+    </p>
+
+    <br>
+
+    <p>
+        The band's sound is built around crushing riffs,
+        relentless aggression and a dark atmosphere,
+        creating a raw death metal experience.
+    </p>
+
+    <br>
+
+    <p>
+        Their upcoming album
+        <strong>"Spiritual Equilibrium"</strong>
+        contains 10 tracks and marks the band's next chapter.
+    </p>
+
+</section>
+
+
+<!-- =========================================================
+     ALBUM
+     ========================================================= -->
+
+<section id="album">
+
+    <h2 class="section-title">
+        Spiritual Equilibrium
+    </h2>
+
+    <div class="album-feature">
+
+
+        <!-- ALBUM COVER -->
+        <div class="album-cover">
+
+            <!--
+                PUT YOUR ALBUM COVER HERE
+
+                Example:
+                images/spiritual-equilibrium.jpg
+            -->
+
+            <img
+                src="images/spiritual-equilibrium.jpg"
+                alt="Recurring Death - Spiritual Equilibrium album artwork"
+            >
+
+        </div>
+
+
+        <!-- ALBUM INFORMATION -->
+        <div class="album-info">
+
+            <h3>
+                SPIRITUAL EQUILIBRIUM
+            </h3>
+
+            <div class="album-subtitle">
+                NEW ALBUM — 2026
+            </div>
+
+            <p>
+                The new RECURRING DEATH album is ready.
+                10 tracks of absolute death metal destruction.
+            </p>
+
+            <p>
+                Coming soon on Vinyl, CD and all major
+                digital platforms.
+            </p>
+
+            <div class="album-meta">
+
+                <span>
+                    ARTIST:
+                    <strong>RECURRING DEATH</strong>
+                </span>
+
+                <span>
+                    ALBUM:
+                    <strong>SPIRITUAL EQUILIBRIUM</strong>
+                </span>
+
+                <span>
+                    TRACKS:
+                    <strong>10</strong>
+                </span>
+
+                <span>
+                    RELEASE:
+                    <strong>OCTOBER 2026</strong>
+                </span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     ARTWORK
+     ========================================================= -->
+
+<section id="artwork">
+
+    <h2 class="section-title">
+        Artwork
+    </h2>
+
+    <p class="artwork-intro">
+        Visuals, artwork and imagery from the world of
+        <strong>RECURRING DEATH</strong>.
+    </p>
+
+
+    <div class="artwork-grid">
+
+
+        <!-- ARTWORK 01 -->
+
+        <div class="artwork-card">
+
+            <img
+                src="images/artwork-01.jpg"
+                alt="Recurring Death artwork 01"
+            >
+
+            <div class="artwork-overlay">
+
+                <h3>
+                    Spiritual Equilibrium
+                </h3>
+
+                <span>
+                    Album Artwork
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <!-- ARTWORK 02 -->
+
+        <div class="artwork-card">
+
+            <img
+                src="images/artwork-02.jpg"
+                alt="Recurring Death artwork 02"
+            >
+
+            <div class="artwork-overlay">
+
+                <h3>
+                    Hazardous Abyss
+                </h3>
+
+                <span>
+                    Single Artwork
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <!-- ARTWORK 03 -->
+
+        <div class="artwork-card">
+
+            <img
+                src="images/artwork-03.jpg"
+                alt="Recurring Death artwork 03"
+            >
+
+            <div class="artwork-overlay">
+
+                <h3>
+                    Recurring Death
+                </h3>
+
+                <span>
+                    Artwork
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <!-- ARTWORK 04 -->
+
+        <div class="artwork-card">
+
+            <img
+                src="images/artwork-04.jpg"
+                alt="Recurring Death artwork 04"
+            >
+
+            <div class="artwork-overlay">
+
+                <h3>
+                    Underground
+                </h3>
+
+                <span>
+                    Artwork
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <!-- ARTWORK 05 -->
+
+        <div class="artwork-card">
+
+            <img
+                src="images/artwork-05.jpg"
+                alt="Recurring Death artwork 05"
+            >
+
+            <div class="artwork-overlay">
+
+                <h3>
+                    Death Metal
+                </h3>
+
+                <span>
+                    Artwork
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <!-- ARTWORK 06 -->
+
+        <div class="artwork-card">
+
+            <img
+                src="images/artwork-06.jpg"
+                alt="Recurring Death artwork 06"
+            >
+
+            <div class="artwork-overlay">
+
+                <h3>
+                    2026
+                </h3>
+
+                <span>
+                    Recurring Death
+                </span>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     MUSIC
+     ========================================================= -->
+
+<section id="music">
+
+    <h2 class="section-title">
+        Music
+    </h2>
+
+    <div class="music-box">
+
+        <h3>
+            HAZARDOUS ABYSS
+        </h3>
+
+        <div class="track-name">
+            FROM SPIRITUAL EQUILIBRIUM
+        </div>
+
+        <p>
+            Listen to the single from the upcoming
+            RECURRING DEATH album.
+        </p>
+
+        <a
+            class="button"
+            href="https://soundcloud.com/recurring-death"
+            target="_blank"
+            rel="noopener noreferrer">
+
+            LISTEN ON SOUNDCLOUD
+
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     NEWS
+     ========================================================= -->
+
+<section id="news">
+
+    <h2 class="section-title">
+        News
+    </h2>
+
+
+    <article class="news-card">
 
         <div class="news-label">
             NEW RELEASE
         </div>
 
         <h3>
-            Νέο Album "Spiritual Equilibrium"
+            Spiritual Equilibrium
         </h3>
 
-        <p class="news-date">
-            30 Σεπτεμβρίου 2026
-        </p>
+        <div class="news-date">
+            30 SEPTEMBER 2026
+        </div>
 
         <p>
-            Είμαστε στην ευχάριστη θέση να ανακοινώσουμε ότι ο νέος
-            δίσκος των <strong>RECURRING DEATH</strong> είναι έτοιμος.
-            10 κομμάτια απόλυτης death metal καταστροφής.
+            We are pleased to announce that the new
+            RECURRING DEATH album is ready.
+            10 tracks of absolute death metal destruction.
         </p>
 
+        <br>
+
         <p>
-            Κυκλοφορεί τον επόμενο μήνα σε Vinyl, CD και σε όλες
-            τις Digital πλατφόρμες.
+            Coming next month on Vinyl, CD and all
+            major digital platforms.
         </p>
 
     </article>
 
 </section>
-    </section>
 
 
-    <!-- SECTION: ΜΟΥΣΙΚΗ -->
+<!-- =========================================================
+     LIVE
+     ========================================================= -->
 
-    <section id="music">
+<section id="shows">
 
-        <h2>Μουσικη</h2>
-
-        <p>
-            Ακούστε το single μας "Hazardous Abyss" από τον επερχόμενο δίσκο:
-        </p>
-
-        <div style="background-color: #151515; padding: 40px 20px; text-align: center; border: 1px dashed #8b0000;">
-
-            <div style="font-size: 32px; color: #8b0000; letter-spacing: 3px; margin-bottom: 10px;">
-                COMING SOON
-            </div>
-
-            <div style="font-family: 'Arial', sans-serif; color: #888; font-size: 15px;">
-                NEW MUSIC — RECURRING DEATH
-            </div>
-
-        </div>
-
-    </section>
+    <h2 class="section-title">
+        Live
+    </h2>
 
 
-    <!-- SECTION: ΣΥΝΑΥΛΙΕΣ -->
+    <ul class="tour-list">
 
-    <section id="shows">
+        <li class="tour-item">
 
-        <h2>Επερχομενεσ Συναυλιεσ</h2>
+            <span class="tour-date">
+                TBA
+            </span>
 
-        <ul class="tour-list">
+            <span class="tour-city">
+                TBA
+            </span>
 
-            <li class="tour-item">
-                <span class="tour-date">TBA</span>
-                <span class="tour-city">TBA</span>
-                <span class="tour-venue">TBA</span>
-            </li>
+            <span class="tour-venue">
+                TBA
+            </span>
 
-            <li class="tour-item">
-                <span class="tour-date">TBS</span>
-                <span class="tour-city">TBA</span>
-                <span class="tour-venue">TBA</span>
-            </li>
-
-            <li class="tour-item">
-                <span class="tour-date">TBA</span>
-                <span class="tour-city">TBA</span>
-                <span class="tour-venue">TBA</span>
-            </li>
-
-        </ul>
-
-    </section>
+        </li>
 
 
-    <!-- SECTION: ΕΠΙΚΟΙΝΩΝΙΑ -->
+        <li class="tour-item">
 
-    <section id="contact">
+            <span class="tour-date">
+                TBA
+            </span>
 
-        <h2>Επικοινωνια & Booking</h2>
+            <span class="tour-city">
+                TBA
+            </span>
 
-        <p>
-            Για κλείσιμο συναυλιών, συνεντεύξεις ή ερωτήσεις,
-            συμπληρώστε την παρακάτω φόρμα:
-        </p>
+            <span class="tour-venue">
+                TBA
+            </span>
 
-        <form action="#" method="POST">
-
-            <input type="text"
-                   placeholder="Το Όνομά σας"
-                   required>
-
-            <input type="email"
-                   placeholder="Το Email σας"
-                   required>
-
-            <textarea rows="5"
-                      placeholder="Το Μήνυμά σας"
-                      required></textarea>
-
-            <button type="submit">
-                Αποστολη Μηνυματοσ
-            </button>
-
-        </form>
-
-    </section>
+        </li>
 
 
-    <!-- FOOTER -->
+        <li class="tour-item">
 
-    <footer>
+            <span class="tour-date">
+                TBA
+            </span>
 
-        <p>
-            &copy; 2026 RECURRING DEATH.
-            All Rights Reserved.
-            Designed for the Underground.
-        </p>
+            <span class="tour-city">
+                TBA
+            </span>
 
-    </footer>
+            <span class="tour-venue">
+                TBA
+            </span>
+
+        </li>
+
+    </ul>
+
+</section>
+
+
+<!-- =========================================================
+     CONTACT
+     ========================================================= -->
+
+<section id="contact">
+
+    <h2 class="section-title">
+        Contact & Booking
+    </h2>
+
+    <p class="contact-text">
+        For bookings, interviews, press enquiries or general
+        information, get in touch with RECURRING DEATH.
+    </p>
+
+
+    <form action="#" method="POST">
+
+        <input
+            type="text"
+            name="name"
+            placeholder="Your Name"
+            required
+        >
+
+
+        <input
+            type="email"
+            name="email"
+            placeholder="Your Email"
+            required
+        >
+
+
+        <select name="subject">
+
+            <option value="">
+                Select Enquiry Type
+            </option>
+
+            <option value="booking">
+                Booking
+            </option>
+
+            <option value="press">
+                Press / Interview
+            </option>
+
+            <option value="general">
+                General Enquiry
+            </option>
+
+        </select>
+
+
+        <textarea
+            name="message"
+            placeholder="Your Message"
+            required>
+        </textarea>
+
+
+        <button type="submit">
+            SEND MESSAGE
+        </button>
+
+    </form>
+
+</section>
+
+
+<!-- =========================================================
+     SOCIALS
+     ========================================================= -->
+
+<section class="socials">
+
+    <h2 class="section-title">
+        Follow
+    </h2>
+
+
+    <div class="social-links">
+
+        <a
+            href="https://soundcloud.com/recurring-death"
+            target="_blank"
+            rel="noopener noreferrer">
+
+            SOUNDCLOUD
+
+        </a>
+
+
+        <a
+            href="https://www.instagram.com/recurringdeathofficial/?hl=en"
+            target="_blank"
+            rel="noopener noreferrer">
+
+            INSTAGRAM
+
+        </a>
+
+
+        <a
+            href="https://www.facebook.com/people/Recurring-Death/61595077432643/"
+            target="_blank"
+            rel="noopener noreferrer">
+
+            FACEBOOK
+
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     FOOTER
+     ========================================================= -->
+
+<footer>
+
+    <p>
+        © 2026 RECURRING DEATH.
+        ALL RIGHTS RESERVED.
+        DESIGNED FOR THE UNDERGROUND.
+    </p>
+
+</footer>
+
 
 </body>
 </html>
+```
