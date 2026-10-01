@@ -733,58 +733,59 @@
            LIVE
            ========================================================= */
 
-        .tour-list {
-            list-style: none;
-        }
+    .tour-list {
+    list-style: none;
+    display: grid;
+    gap: 10px;
+}
 
-        .tour-item {
-            display: grid;
+.tour-item {
+    display: grid;
+    grid-template-columns: 160px 1fr 1fr;
+    gap: 25px;
+    align-items: center;
+    padding: 24px 28px;
+    background:
+        linear-gradient(135deg, rgba(120,0,0,0.06), transparent 50%),
+        var(--black-3);
+    border-left: 3px solid var(--blood);
+    border-top: 1px solid #242424;
+    border-right: 1px solid #1b1b1b;
+    border-bottom: 1px solid #1b1b1b;
+    box-shadow: 0 12px 35px rgba(0,0,0,0.4);
+    transition: transform 0.3s ease,
+                border-color 0.3s ease,
+                background 0.3s ease;
+}
 
-            grid-template-columns:
-                150px 1fr 1fr;
+.tour-item:hover {
+    transform: translateX(4px);
+    background:
+        linear-gradient(135deg, rgba(120,0,0,0.10), transparent 55%),
+        #151515;
+    border-left-color: var(--blood-light);
+}
 
-            gap: 20px;
+.tour-date {
+    color: var(--blood-light);
+    font-size: 12px;
+    font-weight: 900;
+    letter-spacing: 2px;
+}
 
-            align-items: center;
+.tour-city {
+    color: #fff;
+    font-size: 15px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
 
-            padding: 20px;
-
-            margin-bottom: 8px;
-
-            background: var(--black-3);
-
-            border-left: 3px solid var(--blood);
-
-            border-bottom: 1px solid #202020;
-
-            transition: 0.3s ease;
-        }
-
-        .tour-item:hover {
-            background: #151515;
-        }
-
-        .tour-date {
-            color: var(--blood-light);
-
-            font-weight: 900;
-
-            letter-spacing: 1px;
-        }
-
-        .tour-city {
-            color: #fff;
-
-            font-weight: 800;
-
-            letter-spacing: 1px;
-        }
-
-        .tour-venue {
-            color: #666;
-
-            letter-spacing: 1px;
-        }
+.tour-venue {
+    color: #777;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
 
 
         /* =========================================================
