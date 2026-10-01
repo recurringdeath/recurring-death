@@ -586,42 +586,76 @@
            MUSIC
            ========================================================= */
 
-        .music-box {
-            padding: 50px 30px;
+   /* =========================================================
+   MUSIC
+   ========================================================= */
 
-            background: var(--black-3);
+.music-box {
+    position: relative;
 
-            border: 1px solid #292929;
+    padding: 55px 35px;
 
-            border-top: 2px solid var(--blood);
+    background:
+        linear-gradient(
+            135deg,
+            rgba(120, 0, 0, 0.08),
+            transparent 45%
+        ),
+        var(--black-3);
 
-            text-align: center;
-        }
+    border: 1px solid #292929;
 
-        .music-box h3 {
-            color: #fff;
+    border-top: 2px solid var(--blood);
 
-            font-size: 30px;
+    text-align: center;
 
-            letter-spacing: 5px;
+    box-shadow:
+        0 20px 60px rgba(0, 0, 0, 0.55);
 
-            margin-bottom: 8px;
-        }
+    transition:
+        transform 0.3s ease,
+        border-color 0.3s ease;
+}
 
-        .music-box .track-name {
-            color: var(--blood-light);
+.music-box:hover {
+    transform: translateY(-3px);
 
-            font-size: 12px;
-            font-weight: 900;
+    border-color: #3a3a3a;
+}
 
-            letter-spacing: 4px;
+.music-box h3 {
+    color: #fff;
 
-            margin-bottom: 25px;
-        }
+    font-size: 32px;
 
-        .music-box p {
-            margin-bottom: 25px;
-        }
+    letter-spacing: 6px;
+
+    line-height: 1.2;
+
+    margin-bottom: 10px;
+}
+
+.music-box .track-name {
+    color: var(--blood-light);
+
+    font-size: 12px;
+
+    font-weight: 900;
+
+    letter-spacing: 4px;
+
+    margin-bottom: 28px;
+}
+
+.music-box p {
+    max-width: 650px;
+
+    margin: 0 auto 28px;
+
+    color: #aaa;
+
+    line-height: 1.8;
+}
 
 
         /* =========================================================
