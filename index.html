@@ -788,87 +788,86 @@
 }
 
 
-        /* =========================================================
-           CONTACT
-           ========================================================= */
+     /* =========================================================
+   CONTACT
+   ========================================================= */
 
-        .contact-text {
-            margin-bottom: 30px;
-        }
+.contact-text {
+    max-width: 720px;
+    margin: 0 auto 40px;
+    text-align: center;
+    color: #999;
+    line-height: 1.8;
+    font-size: 15px;
+}
 
-        form {
-            display: flex;
+form {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
 
-            flex-direction: column;
+input,
+textarea,
+select {
+    width: 100%;
+    padding: 17px 18px;
+    background: #0b0b0b;
+    border: 1px solid #292929;
+    border-left: 3px solid #252525;
+    color: #ddd;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    letter-spacing: 1px;
+    outline: none;
+    transition: border-color 0.3s ease,
+                background 0.3s ease;
+}
 
-            gap: 14px;
-        }
+input:focus,
+textarea:focus,
+select:focus {
+    background: #101010;
+    border-color: var(--blood);
+}
 
-        input,
-        textarea,
-        select {
-            width: 100%;
+input::placeholder,
+textarea::placeholder {
+    color: #555;
+}
 
-            padding: 16px;
+textarea {
+    min-height: 190px;
+    resize: vertical;
+}
 
-            background: #101010;
+select {
+    color: #777;
+    cursor: pointer;
+}
 
-            border: 1px solid #292929;
+button {
+    margin-top: 10px;
+    padding: 17px 30px;
+    background: var(--blood);
+    border: 1px solid var(--blood-light);
+    color: #fff;
+    font-size: 12px;
+    font-weight: 900;
+    letter-spacing: 3px;
+    cursor: pointer;
+    transition: background 0.3s ease,
+                transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
 
-            color: #fff;
-
-            font-family: Arial, Helvetica, sans-serif;
-
-            font-size: 14px;
-
-            outline: none;
-
-            transition: 0.3s ease;
-        }
-
-        input:focus,
-        textarea:focus,
-        select:focus {
-            border-color: var(--blood);
-        }
-
-        input::placeholder,
-        textarea::placeholder {
-            color: #555;
-        }
-
-        textarea {
-            min-height: 150px;
-
-            resize: vertical;
-        }
-
-        select {
-            color: #777;
-        }
-
-        button {
-            padding: 16px;
-
-            background: var(--blood);
-
-            border: none;
-
-            color: #fff;
-
-            font-size: 11px;
-            font-weight: 900;
-
-            letter-spacing: 3px;
-
-            cursor: pointer;
-
-            transition: 0.3s ease;
-        }
-
-        button:hover {
-            background: var(--blood-light);
-        }
+button:hover {
+    background: var(--blood-light);
+    transform: translateY(-2px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
 
 
         /* =========================================================
